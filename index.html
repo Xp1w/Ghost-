@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Search - محرك بحث فوكس</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦊</text></svg>">
+</head>
+<body class="light-mode">
+    <!-- شريط العنوان -->
+    <header class="header">
+        <div class="header-left">
+            <div class="browser-icon">
+                <span>🦊</span>
+            </div>
+            <span class="browser-info" id="browserInfo">متصفح Fox</span>
+        </div>
+        <div class="header-right">
+            <button id="themeToggle" class="theme-toggle">🌙</button>
+            <nav class="header-nav">
+                <a href="#">صور</a>
+                <a href="#">فيديو</a>
+                <a href="#">خرائط</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- منطقة البحث الرئيسية -->
+    <main class="search-container">
+        <div class="logo-container">
+            <h1 class="logo">Fox<span>Search</span></h1>
+            <p class="tagline">ابحث عن أي شيء بخصوصية تامة</p>
+        </div>
+        
+        <div class="search-box-container">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="searchInput" placeholder=" ابحث في FoxSearch..." autocomplete="off">
+                <button class="voice-search" title="البحث الصوتي">🎤</button>
+            </div>
+            <div class="search-buttons">
+                <button class="search-btn" id="webSearch">بحث FoxSearch</button>
+                <button class="search-btn secondary" id="luckySearch">ضربة حظ</button>
+            </div>
+        </div>
+
+        <!-- الإكمال التلقائي -->
+        <div class="autocomplete-box" id="autocompleteBox"></div>
+    </main>
+
+    <!-- نتائج البحث -->
+    <section class="results-container" id="resultsContainer">
+        <div class="result-stats" id="resultStats"></div>
+        <div id="searchResults"></div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>عن FoxSearch</h3>
+                <p>محرك بحث متطور يوفر لك نتائج دقيقة مع الحفاظ على خصوصيتك.</p>
+            </div>
+            <div class="footer-section">
+                <h3>تابعنا على</h3>
+                <div class="social-links">
+                    <a href="https://t.me/FF3_B" target="_blank">📢 تيليجرام</a>
+                    <a href="https://www.tiktok.com/@96g__" target="_blank">🎵 تيك توك</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>حقوق النشر</h3>
+                <p>© 2023 FoxSearch. جميع الحقوق محفوظة.</p>
+                <p>تم التطوير بواسطة <a href="https://t.me/FF3_B" target="_blank">@FF3_B</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
